@@ -1,186 +1,144 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>YashResults - Sarkari Naukri & Exam Updates</title>
-  <style>
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #800000;
-      color: white;
-      padding: 15px 10px;
-      text-align: center;
-    }
-    header .logo h1 {
-      font-size: 2.5em;
-      margin-bottom: 5px;
-    }
-    header .logo p {
-      font-size: 1.1em;
-      font-weight: 500;
-    }
-    nav {
-      margin-top: 12px;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>YashResults - Sarkari Naukri & Free Job Alerts</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f7f9fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #004080;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  header h1 {
+    margin-bottom: 5px;
+  }
+  nav {
+    margin-top: 10px;
+  }
+  nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px 40px 20px;
+  }
+  section {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    border-radius: 6px;
+    margin-bottom: 30px;
+  }
+  section h2 {
+    color: #004080;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  li {
+    margin-bottom: 12px;
+    font-size: 1.1em;
+  }
+  a {
+    color: #0073e6;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 40px;
+  }
+  @media(max-width: 700px) {
     nav a {
-      color: white;
-      margin: 0 14px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1em;
+      display: inline-block;
+      margin: 8px 10px;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      padding: 20px;
-      max-width: 1000px;
-      margin: 20px auto;
-    }
-    .announcement h2 {
-      color: #800000;
-      margin-bottom: 12px;
-      border-bottom: 2px solid #800000;
-      padding-bottom: 6px;
-    }
-    .announcement ul {
-      list-style-type: none;
-    }
-    .announcement li {
-      margin-bottom: 10px;
-      font-size: 1.1em;
-    }
-    .announcement a {
-      color: #0077cc;
-      text-decoration: none;
-    }
-    .announcement a:hover {
-      text-decoration: underline;
-    }
-    .categories {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 30px;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .category {
-      background-color: white;
-      padding: 15px 20px;
-      flex: 1 1 30%;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      min-width: 250px;
-      border-radius: 6px;
-    }
-    .category h3 {
-      color: #800000;
-      margin-bottom: 12px;
-      font-size: 1.3em;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 6px;
-    }
-    .category ul {
-      list-style-type: none;
-    }
-    .category li {
-      margin-bottom: 8px;
-      font-size: 1em;
-    }
-    .category a {
-      color: #0077cc;
-      text-decoration: none;
-    }
-    .category a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      background-color: #800000;
-      color: white;
-      text-align: center;
-      padding: 15px 10px;
-      margin-top: 40px;
-      font-size: 0.9em;
-    }
-
-    /* Responsive */
-    @media(max-width: 700px){
-      nav a {
-        display: inline-block;
-        margin: 8px 10px;
-      }
-      .categories {
-        flex-direction: column;
-      }
-      .category {
-        flex: 1 1 100%;
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <h1>YashResults</h1>
-      <p>Government Jobs & Exam Updates</p>
-    </div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Latest Jobs</a>
-      <a href="#">Results</a>
-      <a href="#">Admit Cards</a>
-      <a href="#">Syllabus</a>
-      <a href="#">Answer Keys</a>
-    </nav>
-  </header>
+<header>
+  <h1>YashResults</h1>
+  <p>Free Sarkari Naukri Alerts & Result Updates</p>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Latest Jobs</a>
+    <a href="#">Results</a>
+    <a href="#">Admit Cards</a>
+    <a href="#">Answer Keys</a>
+    <a href="#">Syllabus</a>
+  </nav>
+</header>
 
-  <main>
-    <section class="announcement">
-      <h2>📢 Latest Updates</h2>
-      <ul>
-        <li><a href="https://uppolice.gov.in" target="_blank" rel="noopener">UP Police Constable Recruitment 2025 - Apply Now</a></li>
-        <li><a href="https://rajeduboard.rajasthan.gov.in" target="_blank" rel="noopener">Rajasthan Board 10th Result 2025 - Check Now</a></li>
-        <li><a href="https://sbi.co.in/careers" target="_blank" rel="noopener">SBI Clerk Admit Card 2025 - Download Here</a></li>
-      </ul>
-    </section>
+<main>
 
-    <section class="categories">
-      <div class="category">
-        <h3>Latest Jobs</h3>
-        <ul>
-          <li><a href="https://uppolice.gov.in/si-recruitment" target="_blank" rel="noopener">UP Police SI Online Form 2025</a></li>
-          <li><a href="https://state.bihar.gov.in/shsmo" target="_blank" rel="noopener">Bihar SHS MO Recruitment 2025</a></li>
-        </ul>
-      </div>
-      <div class="category">
-        <h3>Results</h3>
-        <ul>
-          <li><a href="https://rajeduboard.rajasthan.gov.in/12th-result" target="_blank" rel="noopener">Rajasthan Board 12th Result 2025</a></li>
-          <li><a href="https://uppsc.up.nic.in/ae-pre-result" target="_blank" rel="noopener">UPPSC AE Pre Result 2025</a></li>
-        </ul>
-      </div>
-      <div class="category">
-        <h3>Admit Cards</h3>
-        <ul>
-          <li><a href="https://aiims.edu/nursing-admit-card" target="_blank" rel="noopener">AIIMS BSc Nursing Admit Card 2025</a></li>
-          <li><a href="https://rrbcdg.gov.in/ntpc-admit-card" target="_blank" rel="noopener">RRB NTPC Admit Card 2025</a></li>
-        </ul>
-      </div>
-    </section>
-  </main>
+  <section>
+    <h2>Latest Sarkari Naukri</h2>
+    <ul>
+      <li><a href="https://www.freejobalert.com/up-police-constable-recruitment" target="_blank" rel="noopener">UP Police Constable Recruitment 2025 - Apply Now</a></li>
+      <li><a href="https://www.freejobalert.com/ssc-cgl-2025-notification" target="_blank" rel="noopener">SSC CGL 2025 Notification Released</a></li>
+      <li><a href="https://www.freejobalert.com/railway-recruitment-2025" target="_blank" rel="noopener">Railway Recruitment 2025 - Apply Online</a></li>
+      <li><a href="https://www.freejobalert.com/bank-po-recruitment-2025" target="_blank" rel="noopener">Bank PO Recruitment 2025 - Apply Here</a></li>
+      <li><a href="https://www.freejobalert.com/ssc-je-recruitment-2025" target="_blank" rel="noopener">SSC JE Recruitment 2025 - Online Form</a></li>
+    </ul>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 YashResults. All rights reserved.</p>
-  </footer>
+  <section>
+    <h2>Latest Sarkari Results</h2>
+    <ul>
+      <li><a href="https://www.freejobalert.com/rajasthan-board-10th-result" target="_blank" rel="noopener">Rajasthan Board 10th Result 2025</a></li>
+      <li><a href="https://www.freejobalert.com/upsc-civil-services-result" target="_blank" rel="noopener">UPSC Civil Services Result 2025</a></li>
+      <li><a href="https://www.freejobalert.com/ssc-mts-result" target="_blank" rel="noopener">SSC MTS Result 2025</a></li>
+      <li><a href="https://www.freejobalert.com/railway-recruitment-result" target="_blank" rel="noopener">Railway Recruitment Result 2025</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Admit Cards</h2>
+    <ul>
+      <li><a href="https://www.freejobalert.com/aiims-nursing-admit-card" target="_blank" rel="noopener">AIIMS Nursing Admit Card 2025</a></li>
+      <li><a href="https://www.freejobalert.com/rrb-ntpc-admit-card" target="_blank" rel="noopener">RRB NTPC Admit Card 2025</a></li>
+      <li><a href="https://www.freejobalert.com/sbi-clerk-admit-card" target="_blank" rel="noopener">SBI Clerk Admit Card 2025</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Answer Keys</h2>
+    <ul>
+      <li><a href="https://www.freejobalert.com/ssc-cgl-answer-key" target="_blank" rel="noopener">SSC CGL Answer Key 2025</a></li>
+      <li><a href="https://www.freejobalert.com/railway-recruitment-answer-key" target="_blank" rel="noopener">Railway Recruitment Answer Key 2025</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 YashResults. All rights reserved.</p>
+</footer>
 </body>
 </html>
